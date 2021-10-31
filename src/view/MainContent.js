@@ -15,7 +15,9 @@ function MainContent() {
                                     <div className="col-md-12">
                                         <div className="row">
                                             <div className="col-md-8">
-                                                Etat
+                                                <div className="etatNormal">
+                                                    ETAT NORMAL
+                                                </div>
                                             </div>
                                             <div className="col-md-4">
                                                 Champs votov
@@ -23,8 +25,17 @@ function MainContent() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-4" style={{ borderLeft: "1px solid black" }}>
-                                    Date et Heure
+                                <div className="col-md-4" style={{ borderLeft: "1px solid silver" }}>
+                                    <div className="" style={{ borderBottom: "1px solid silver" }}>
+                                        Date et Heure
+                                    </div>
+                                    <div style={{ display: "block" }}>
+                                        Contacts informations <br />
+                                        Téléphone <br />
+                                        Email <br />
+                                        Facebook <br />
+                                        Whatsapp
+                                    </div>
                                 </div>
                             </div>
                         </div>
