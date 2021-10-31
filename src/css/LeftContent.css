@@ -1,0 +1,29 @@
+.ListeSide {
+    background-color: #282c34;
+    margin: 0px;
+    height: 100vh;
+}
+
+.ListeSide a {
+    border: 1px solid silver;
+    line-height: 50px;
+    height: 100px;
+    background-color: #282c34;
+    color: silver;
+    font-family: Segoe UI;
+    font-size: 16px;
+    text-align: center;
+}
+
+.ListeSide a:hover {
+    color: black;
+    background-color: silver;
+}
+
+.ListeSide .fa {
+    font-size: 30px;
+}
+
+.active {
+    background-color: red;
+}
