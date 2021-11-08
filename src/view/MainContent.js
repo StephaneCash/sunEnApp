@@ -3,16 +3,30 @@ import UpComponent from "./UpComponent";
 import "../css/MainContent.css";
 import Circle from "./Circle";
 import Load from "./Load";
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import Data from "./Data"
 
 function MainContent() {
 
     const [etatLoad, setEtatLoad] = useState(true);
     const [a, setA] = useState(false);
+    const [data, setData] = useState([])
 
-    setTimeout(() => {
-        setEtatLoad(false)
-    }, 1000)
+
+    const fetchData = () => {
+        Data.getAll().then(res => {
+            const donnees = res.data;
+            setEtatLoad(false);
+            setA(true)
+            setData(donnees);
+        })
+    }
+
+    console.log("DATA", data)
+
+    useEffect(() => {
+        fetchData()
+    }, [])
 
     return (
         <>
@@ -44,7 +58,7 @@ function MainContent() {
 
                                                                 <p style={{ paddingLeft: "23px", }}>
                                                                     {
-                                                                        a === true ? (
+                                                                        a === false ? (
                                                                             <>
                                                                                 00
                                                                             </>
@@ -170,14 +184,41 @@ function MainContent() {
                                                             <i className="fa fa-battery"></i>
                                                         </td>
                                                         <td style={{ textAlign: "center" }}>
-                                                            <i>Etat de charge</i> <br />
-                                                            <div class="progress progress-md">
-                                                                <div class="progress-bar bg-success" role="progressbar" style={{ width: '90%' }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                                            </div>
+                                                            {
+                                                                a === false ? (
+                                                                    <>
+                                                                        <i>Etat de charge</i> <br />
+                                                                        <div class="progress progress-md">
+                                                                            <div class="progress-bar bg-primary" role="progressbar" style={{ width: '0%' }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                        </div>
+                                                                    </>
+                                                                ) : (
+                                                                    <>
+                                                                        <i>Etat de charge</i> <br />
+                                                                        <div class="progress progress-md">
+                                                                            <div class="progress-bar bg-success" role="progressbar" style={{ width: '90%' }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                        </div>
+                                                                    </>
+                                                                )
+                                                            }
                                                         </td>
                                                         <td>
                                                             <br />
-                                                            92 %
+                                                            {
+                                                                a === false ? (
+                                                                    <>
+                                                                        00 %
+                                                                    </>
+                                                                ) : (
+                                                                    <>
+                                                                        {
+                                                                            data.map((val) => {
+                                                                                return val.etatCharge
+                                                                            })
+                                                                        } %
+                                                                    </>
+                                                                )
+                                                            }
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -200,13 +241,39 @@ function MainContent() {
                                                             <br />
                                                             <i className="fa fa-plug"></i></td>
                                                         <td style={{ textAlign: "center" }}> <i>Consommation </i><br />
-                                                            <div class="progress progress-md">
-                                                                <div class="progress-bar bg-" role="progressbar" style={{ width: '65%', backgroundColor: "orange" }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                                            </div>
+                                                            {
+                                                                a === false ? (
+                                                                    <>
+                                                                        <div class="progress progress-md">
+                                                                            <div class="progress-bar bg-primary" role="progressbar" style={{ width: '0%' }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                        </div>
+                                                                    </>
+                                                                ) : (
+                                                                    <>
+                                                                        <div class="progress progress-md">
+                                                                            <div class="progress-bar bg-" role="progressbar" style={{ width: '65%', backgroundColor: "orange" }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                        </div>
+                                                                    </>
+                                                                )
+                                                            }
                                                         </td>
                                                         <td>
                                                             <br />
-                                                            65 W</td>
+                                                            {
+                                                                a === false ? (
+                                                                    <>
+                                                                        00 %
+                                                                    </>
+                                                                ) : (
+                                                                    <>
+                                                                        {
+                                                                            data.map((val) => {
+                                                                                return val.consommation
+                                                                            })
+                                                                        } W
+                                                                    </>
+                                                                )
+                                                            }</td>
                                                     </tr>
                                                     <tr>
                                                         <td style={{ padding: '17px' }}><i className="fa fa-battery-empty"></i></td>
