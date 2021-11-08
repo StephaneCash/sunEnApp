@@ -1,0 +1,44 @@
+.box {
+    position: relative;
+}
+
+.pourcent {
+    position: relative;
+}
+
+svg {
+    width: 150px;
+    height: 150px;
+}
+
+svg circle {
+    fill: none;
+    stroke: #1f87ff;
+    stroke-width: 10px;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 455;
+    stroke-dashoffset: 455;
+    stroke-linecap: round;
+}
+
+svg circle:nth-child(1) {
+    stroke: #a6abb1;
+    stroke-dashoffset: 0;
+}
+
+svg circle:nth-child(2) {
+    animation: circle 2s forwards;
+}
+
+@keyframes circle {
+    to {
+        stroke-dashoffset: 54;
+    }
+}
+
+span {
+    position: absolute;
+    top: 26%;
+    left: 23%;
+    font-size: 22px
+}

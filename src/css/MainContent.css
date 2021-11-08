@@ -1,0 +1,77 @@
+.mainContent {
+    padding-top: 20px;
+    height: 90vh;
+    background-color: rgb(241, 241, 237);
+}
+
+.mainContent .mainContent_1 {
+    border-bottom: 1px solid silver;
+}
+
+.mainContent .mainContent_2 {
+    border-bottom: 1px solid silver;
+}
+
+.mainContent_2 {
+    height: 34vh !important;
+}
+
+.champs {
+    border: 1px solid silver;
+    height: 27vh;
+    padding: 10px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.date {
+    height: 41.5vh;
+    border: 1px solid silver;
+    padding: 20px;
+    margin-top: 5px;
+}
+
+.charge {
+    height: 30vh;
+    padding: 10px;
+}
+
+.humidite {
+    height: 30vh;
+    padding: 10px;
+}
+
+.circular .progressCircle {
+    border: 1px solid silver;
+}
+
+.temperature {
+    margin-top: 5px !important;
+    height: 14vh;
+}
+
+.el {
+    border: 1px solid silver;
+    padding: 20px;
+    width: 92%;
+    border-radius: 5px;
+}
+
+.contentEtat {
+    margin-top: 10px !important;
+    padding: 10px 30px;
+    width: 250px;
+}
+
+.etatParent {
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.dataC {
+    border: 1px solid silver;
+    width: 92%;
+    margin-left: 10px;
+    margin-top: -5px;
+    height: 40vh;
+}

@@ -1,11 +1,11 @@
 .ListeSide {
     background-color: #282c34;
     margin: 0px;
-    height: 100vh;
+    height: 90vh;
 }
 
 .ListeSide a {
-    border: 1px solid silver;
+    border-bottom: 1px solid silver;
     line-height: 50px;
     height: 100px;
     background-color: #282c34;

@@ -1,0 +1,25 @@
+.login {
+    border: 1px solid silver;
+    margin: 17vh auto;
+    max-width: 30% !important;
+    padding: 30px !important;
+    padding-top: 60px !important;
+    height: 60vh !important;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px silver;
+    box-shadow: (1px, 0, 2px, white);
+    background-color: #303841;
+    color: white;
+}
+
+.login .btnS {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login .btnE {
+    border: 1px solid silver;
+    margin-top: 10px;
+    float: right;
+    color: white;
+}
