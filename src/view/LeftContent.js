@@ -12,19 +12,19 @@ function LeftContent() {
                     <div style={{ marginTop: "-26px" }}>Accueil</div>
                 </NavLink>
 
-                <NavLink to="/historique" className="list-group-item list-group-item-action nav-link">
+                <NavLink to="/historique" className=" nav-link">
                     <center>
                         <i className="fa fa-history"></i>
                     </center>
                     <div style={{ marginTop: "-26px" }}>Historique</div>
                 </NavLink>
-                <NavLink to="/meteo" className="list-group-item list-group-item-action nav-link">
+                <NavLink to="/meteo" className=" nav-link">
                     <center>
                         <i className="fa fa-cloud"></i>
                     </center>
                     <div style={{ marginTop: "-26px" }}>Météo</div>
                 </NavLink>
-                <NavLink to="/info" className="list-group-item list-group-item-action nav-link">
+                <NavLink to="/info" className="nav-link">
                     <center>
                         <i className="fa fa-info"></i>
                     </center>
@@ -33,7 +33,7 @@ function LeftContent() {
                     </div>
                 </NavLink>
 
-                <NavLink to="/conf" className="list-group-item list-group-item-action nav-link">
+                <NavLink to="/conf" className=" nav-link">
                     <center>
                         <i className="fa fa-gear fa-spin"></i>
                     </center>
@@ -41,7 +41,7 @@ function LeftContent() {
                         Configuration
                     </div>
                 </NavLink>
-                <Link to="/" className="list-group-item list-group-item-action nav-link">
+                <Link to="/" className="nav-link">
                     <center>
                         <i className="fa fa-power-off"></i>
                     </center>

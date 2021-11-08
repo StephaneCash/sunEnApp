@@ -5,6 +5,7 @@ import Circle from "./Circle";
 import Load from "./Load";
 import { useState, useEffect } from "react"
 import Data from "./Data"
+import CircleEmpy from "./CircleEmpy";
 
 function MainContent() {
 
@@ -49,7 +50,18 @@ function MainContent() {
                                                 <div className="col-md-6">
                                                     <div className="col-md-12 etatParent " style={{ paddingLeft: "0", paddingRight: "0", border: "1px solid silver" }}>
                                                         <p style={{ textAlign: "center" }}>
-                                                            ETAT : NORMAL
+                                                            {
+                                                                a === false ? (
+                                                                    <>
+                                                                        ETAT : Pas de données <i className="fa fa-warning"></i>
+                                                                    </>
+                                                                ) : (
+
+                                                                    <>
+                                                                        ETAT : Données disponible
+                                                                    </>
+                                                                )
+                                                            }
                                                         </p>
                                                         <div className="contentEtat d-flex">
 
@@ -60,7 +72,7 @@ function MainContent() {
                                                                     {
                                                                         a === false ? (
                                                                             <>
-                                                                                00
+                                                                                <CircleEmpy />
                                                                             </>
                                                                         ) : (
                                                                             <>
@@ -77,7 +89,17 @@ function MainContent() {
                                                                 <br /><br />
 
                                                                 <p style={{ paddingLeft: "23px", }}>
-                                                                    <Circle />
+                                                                    {
+                                                                        a === false ? (
+                                                                            <>
+                                                                                <CircleEmpy />
+                                                                            </>
+                                                                        ) : (
+                                                                            <>
+                                                                                <Circle />
+                                                                            </>
+                                                                        )
+                                                                    }
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -160,8 +182,8 @@ function MainContent() {
                                         <div className="col-md-3 date">
                                             <div className="row" >
                                                 <div className="el ml-2">
-                                                    <h5 style={{ border: "1px solid silver", padding: "5px" }}>Date et Heure <i className="fa fa-calendar-alt"></i> </h5>
-                                                    <div style={{ border: "1px solid silver", padding: "5px" }}>
+                                                    <h5 className="pl-3" style={{ border: "1px solid silver", padding: "5px" }}>Date et Heure <i className="fa fa-calendar-alt"></i> </h5>
+                                                    <div className="pl-3" style={{ border: "1px solid silver", padding: "5px" }}>
                                                         <h6 className="mt-2">Contacts informations</h6><br />
                                                         <i className="fa fa-phone"></i> Téléphone : <br /><br />
                                                         <i className="fa fa-envelope"></i> Email : <br /><br />
@@ -278,10 +300,25 @@ function MainContent() {
                                                     <tr>
                                                         <td style={{ padding: '17px' }}><i className="fa fa-battery-empty"></i></td>
                                                         <td style={{ textAlign: "center", padding: '17px' }}>
-                                                            <i>Statut de charge : ON </i>
+                                                            <i>Statut de charge  </i>
                                                         </td>
 
-                                                        <td style={{ padding: '17px' }}>00 % <br /></td>
+                                                        <td style={{ padding: '17px' }}>
+                                                            {
+                                                                a === false ? (
+                                                                    <>
+                                                                        OFF
+                                                                    </>
+                                                                ) : (
+                                                                    <>
+                                                                        {
+                                                                            data.map((val) => {
+                                                                                return val.statutCharge
+                                                                            })
+                                                                        }
+                                                                    </>
+                                                                )
+                                                            }<br /></td>
                                                         <br />
                                                     </tr>
                                                 </tbody>
@@ -297,24 +334,88 @@ function MainContent() {
                                                         <td style={{ padding: "20px" }}>
                                                             <i>humidité sur le panneau</i>
                                                         </td>
-                                                        <td style={{ padding: "20px" }}>00 %</td>
+                                                        <td style={{ padding: "20px" }}>
+                                                            {
+                                                                a === false ? (
+                                                                    <>
+                                                                        00 %
+                                                                    </>
+                                                                ) : (
+                                                                    <>
+                                                                        {
+                                                                            data.map((val) => {
+                                                                                return val.humidity
+                                                                            })
+                                                                        } %
+                                                                    </>
+                                                                )
+                                                            }
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td style={{ padding: "20px" }}><i class="fas fa-thermometer-half"></i></td>
                                                         <td style={{ padding: "20px" }}>
                                                             <i>Température sur le panneau</i>
                                                         </td>
-                                                        <td style={{ padding: "20px" }}>19 °C</td>
+                                                        <td style={{ padding: "20px" }}>
+                                                            {
+                                                                a === false ? (
+                                                                    <>
+                                                                        00 °C
+                                                                    </>
+                                                                ) : (
+                                                                    <>
+                                                                        {
+                                                                            data.map((val) => {
+                                                                                return val.tempPann
+                                                                            })
+                                                                        } °C
+                                                                    </>
+                                                                )
+                                                            }
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td style={{ padding: "20px" }}><i class="fas fa-thermometer-half"></i></td>
                                                         <td style={{ padding: "20px" }}><i>Température ambiante</i> </td>
-                                                        <td style={{ padding: "20px" }}>23 %</td>
+                                                        <td style={{ padding: "20px" }}>
+                                                            {
+                                                                a === false ? (
+                                                                    <>
+                                                                        00 °C
+                                                                    </>
+                                                                ) : (
+                                                                    <>
+                                                                        {
+                                                                            data.map((val) => {
+                                                                                return val.tempAmb
+                                                                            })
+                                                                        } °C
+                                                                    </>
+                                                                )
+                                                            }
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td style={{ padding: "20px" }}><i className="fas fa-redo"></i></td>
                                                         <td style={{ padding: "20px" }}><i>Cycle de charge battery</i></td>
-                                                        <td style={{ padding: "20px" }}>4</td>
+                                                        <td style={{ padding: "20px" }}>
+                                                            {
+                                                                a === false ? (
+                                                                    <>
+                                                                        00 °C
+                                                                    </>
+                                                                ) : (
+                                                                    <>
+                                                                        {
+                                                                            data.map((val) => {
+                                                                                return val.cycleCharge
+                                                                            })
+                                                                        } °C
+                                                                    </>
+                                                                )
+                                                            }
+                                                        </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
