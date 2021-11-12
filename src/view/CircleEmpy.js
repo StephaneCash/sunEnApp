@@ -19,7 +19,7 @@ function CircleEmpy() {
         <>
             <div className="containe">
                 <div className="ui-widget">
-                    <span className="ui-label">00 %</span>
+                    <span className="ui-label mt-1">00 %</span>
                 </div>
             </div>
         </>
