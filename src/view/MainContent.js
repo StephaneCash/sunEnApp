@@ -41,7 +41,6 @@ function MainContent() {
                     <div className="col-md-10 mainContent">
                         <div className="col-md-12" style={{ paddingLeft: "0", paddingRight: "0" }}>
                             <p style={{ fontSize: "20px" }}>Dashboard <i className="fa fa-tachometer-alt"></i></p>
-                            <div style={{ borderBottom: "1px solid silver", marginBottom: '10px' }}></div>
                             <div className="row">
                                 <div className="col-md-12 mainContent_1 " >
                                     <div className="row">
@@ -53,12 +52,12 @@ function MainContent() {
                                                             {
                                                                 a === false ? (
                                                                     <>
-                                                                        ETAT : Pas de données <i className="fa fa-warning"></i>
+                                                                        ETAT : PAS DE DONNEES <i className="fa fa-warning"></i>
                                                                     </>
                                                                 ) : (
 
                                                                     <>
-                                                                        ETAT : Données disponible
+                                                                        <h6> ETAT : DONNEES DISPONIBLE </h6>
                                                                     </>
                                                                 )
                                                             }
@@ -110,7 +109,7 @@ function MainContent() {
                                                         <div className="col-md-12">
                                                             <div className="row">
                                                                 <div className="col-md-12 champs">
-                                                                    Champs photovoltaiques : 2 panneaux solaires <br /> <br />
+                                                                    <h6>Champs photovoltaiques : 2 panneaux solaires</h6> <br />
                                                                     <div className="d-flex">
                                                                         <div style={{ marginLeft: '60px' }} >
                                                                             <table className="table table-striped">
@@ -167,10 +166,14 @@ function MainContent() {
                                                                     </div>
                                                                 </div>
                                                                 <div className="col-md-12 temperature" style={{ textAlign: "center" }}>
-                                                                    Température <br /><br />
+                                                                    <b>
+                                                                        Température
+                                                                    </b> <br />
                                                                     <div>
-                                                                        <i className=" fa fa-temperature-high fa-3x"></i> <br />
-                                                                        00 %
+                                                                        <i className=" fa fa-temperature-high fa-2x"></i> <br />
+                                                                        <p style={{ marginLeft: "-10px" }}>
+                                                                            00 %
+                                                                        </p>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -181,9 +184,10 @@ function MainContent() {
                                         </div>
                                         <div className="col-md-3 date">
                                             <div className="row" >
-                                                <div className="el ml-2">
-                                                    <h5 className="pl-3" style={{ border: "1px solid silver", padding: "5px" }}>Date et Heure <i className="fa fa-calendar-alt"></i> </h5>
-                                                    <div className="pl-3" style={{ border: "1px solid silver", padding: "5px" }}>
+                                                <div className="el">
+                                                    <h5 className="" >Date et Heure <i className="fa fa-calendar-alt"></i> </h5>
+                                                    <hr />
+                                                    <div className="pl-3" >
                                                         <h6 className="mt-2">Contacts informations</h6><br />
                                                         <i className="fa fa-phone"></i> Téléphone : <br /><br />
                                                         <i className="fa fa-envelope"></i> Email : <br /><br />
@@ -209,14 +213,14 @@ function MainContent() {
                                                             {
                                                                 a === false ? (
                                                                     <>
-                                                                        <i>Etat de charge</i> <br />
+                                                                        <i style={{ fontSize: "14pxpx" }}>Etat de charge</i> <br />
                                                                         <div class="progress progress-md">
                                                                             <div class="progress-bar bg-primary" role="progressbar" style={{ width: '0%' }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                                                         </div>
                                                                     </>
                                                                 ) : (
                                                                     <>
-                                                                        <i>Etat de charge</i> <br />
+                                                                        <i style={{ fontSize: "14pxpx" }}>Etat de charge</i> <br />
                                                                         <div class="progress progress-md">
                                                                             <div class="progress-bar bg-success" role="progressbar" style={{ width: '90%' }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                                                         </div>
@@ -248,7 +252,7 @@ function MainContent() {
                                                             <br />
                                                             <i className="fa fa-sun"></i>
                                                         </td>
-                                                        <td style={{ textAlign: "center" }}> <i>Production des panneaux </i><br />
+                                                        <td style={{ textAlign: "center" }}> <i style={{ fontSize: "14px" }}>Production des panneaux </i><br />
                                                             <div class="progress progress-md">
                                                                 <div class="progress-bar bg-primary" role="progressbar" style={{ width: '0%' }} aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                                             </div>
@@ -262,7 +266,7 @@ function MainContent() {
                                                         <td>
                                                             <br />
                                                             <i className="fa fa-plug"></i></td>
-                                                        <td style={{ textAlign: "center" }}> <i>Consommation </i><br />
+                                                        <td style={{ textAlign: "center" }}> <i style={{ fontSize: "14px" }}>Consommation </i><br />
                                                             {
                                                                 a === false ? (
                                                                     <>
@@ -298,12 +302,13 @@ function MainContent() {
                                                             }</td>
                                                     </tr>
                                                     <tr>
-                                                        <td style={{ padding: '17px' }}><i className="fa fa-battery-empty"></i></td>
+                                                        <td style={{}}><br /><i className="fa fa-battery-empty"></i></td>
                                                         <td style={{ textAlign: "center", padding: '17px' }}>
-                                                            <i>Statut de charge  </i>
+                                                            <i style={{ fontSize: "14px" }}>Statut de charge  </i>
                                                         </td>
 
-                                                        <td style={{ padding: '17px' }}>
+                                                        <td>
+                                                            <br />
                                                             {
                                                                 a === false ? (
                                                                     <>
@@ -313,7 +318,7 @@ function MainContent() {
                                                                     <>
                                                                         {
                                                                             data.map((val) => {
-                                                                                return val.statutCharge
+                                                                                return <>  {val.statutCharge}</>
                                                                             })
                                                                         }
                                                                     </>
@@ -332,7 +337,7 @@ function MainContent() {
                                                             <i className="fas fa-cloud"></i>
                                                         </td>
                                                         <td style={{ padding: "20px" }}>
-                                                            <i>humidité sur le panneau</i>
+                                                            <i style={{ fontSize: "14px" }}>humidité sur le panneau</i>
                                                         </td>
                                                         <td style={{ padding: "20px" }}>
                                                             {
@@ -355,7 +360,7 @@ function MainContent() {
                                                     <tr>
                                                         <td style={{ padding: "20px" }}><i class="fas fa-thermometer-half"></i></td>
                                                         <td style={{ padding: "20px" }}>
-                                                            <i>Température sur le panneau</i>
+                                                            <i style={{ fontSize: "14px" }}>Température sur le panneau</i>
                                                         </td>
                                                         <td style={{ padding: "20px" }}>
                                                             {
@@ -377,7 +382,7 @@ function MainContent() {
                                                     </tr>
                                                     <tr>
                                                         <td style={{ padding: "20px" }}><i class="fas fa-thermometer-half"></i></td>
-                                                        <td style={{ padding: "20px" }}><i>Température ambiante</i> </td>
+                                                        <td style={{ padding: "20px" }}><i style={{ fontSize: "14px" }}>Température ambiante</i> </td>
                                                         <td style={{ padding: "20px" }}>
                                                             {
                                                                 a === false ? (
@@ -398,7 +403,7 @@ function MainContent() {
                                                     </tr>
                                                     <tr>
                                                         <td style={{ padding: "20px" }}><i className="fas fa-redo"></i></td>
-                                                        <td style={{ padding: "20px" }}><i>Cycle de charge battery</i></td>
+                                                        <td style={{ padding: "20px" }}><i style={{ fontSize: "14px" }}>Cycle de charge battery</i></td>
                                                         <td style={{ padding: "20px" }}>
                                                             {
                                                                 a === false ? (

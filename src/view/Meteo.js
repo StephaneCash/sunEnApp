@@ -11,7 +11,6 @@ function Meteo() {
                         <LeftContent />
                     </div>
                     <div className="col-md-10">
-                        Meteo
                     </div>
                 </div>
             </div>
