@@ -21,7 +21,7 @@ function UpComponent() {
                                     <div className="col-md-2 mt-2">
                                         Langue
                                         <div>
-                                            <select className="form-control" >
+                                            <select >
                                                 <option className="form-control" >en</option>
                                                 <option className="form-control" >fr</option>
                                                 <option className="form-control" >ar</option>
