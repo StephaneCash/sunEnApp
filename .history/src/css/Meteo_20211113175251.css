@@ -1,0 +1,24 @@
+.content10 {
+    background-color: silver;
+}
+
+.content10 p {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-size: 26px;
+    text-align: center;
+}
+
+.colMd {
+    display: block;
+    position: absolute;
+    border: 1px solid black;
+    height: 100px;
+    margin-right: 100px;
+}
+
+main {
+    background-color: white;
+    height: 75vh;
+}

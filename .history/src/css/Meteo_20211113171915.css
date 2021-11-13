@@ -1,0 +1,14 @@
+.content10 {
+    background-color: #f8f8f8;
+    background-image: url('../img/cloud.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 0;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.content10 p {
+    z-index: 12;
+}

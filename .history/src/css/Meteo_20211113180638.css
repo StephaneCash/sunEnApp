@@ -1,0 +1,17 @@
+.content10 {
+    background-position: url('../img/cloud.jpeg');
+}
+
+.content10 p {
+    position: relative;
+    z-index: 2;
+    color: rgb(78, 76, 76);
+    font-size: 26px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+main {
+    height: 175vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+}

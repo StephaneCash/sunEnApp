@@ -141,7 +141,7 @@ function Historique() {
                     <div className="col-md-2" style={{ paddingLeft: "0", paddingRight: "0" }}>
                         <LeftContent />
                     </div>
-                    <div className="col-md-10" style={{ paddingLeft: "20px", paddingRight: "0", marginTop: "20px" }}>
+                    <div className="col-md-10" style={{ paddingLeft: "20px", paddingRight: "0", marginTop: "20px", backgroundColor: "#f8f8f8" }}>
                         <center>  <h5>Vue d'ensemble de mon installation électrique autonôme</h5> </center>
                         <div className="col-md-12">
                             <div className="row">

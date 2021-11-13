@@ -1,0 +1,25 @@
+.content10 {
+    background-color: rgb(148, 144, 144);
+}
+
+.content10 p {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-size: 26px;
+    text-align: center;
+}
+
+.colMd {
+    display: block;
+    position: absolute;
+    border: 1px solid black;
+    height: 100px;
+    margin-right: 100px;
+    background-color: aliceblue;
+}
+
+main {
+    background-color: #f8f8f8;
+    height: 75vh;
+}

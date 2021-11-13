@@ -1,0 +1,28 @@
+.content10 {
+    background-color: #292525;
+    background-image: url('../img/cloud.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.content10 p {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-size: 26px;
+    text-align: center;
+}
+
+.colMd {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+}

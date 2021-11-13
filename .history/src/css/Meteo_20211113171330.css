@@ -1,0 +1,10 @@
+.content10 {
+    background-color: #f8f8f8;
+    background-image: url('../img/cloud.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.5;
+}
+
+.content10 {}

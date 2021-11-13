@@ -15,8 +15,8 @@ function UpComponent() {
                                 <div className="row">
                                     <div className="col-md-8"></div>
                                     <div className="col-md-2">
-                                        <i className="fa fa-user fa-2x mt-3"></i>
-                                        <p>User</p>
+                                        <i className="fa fa-user-circle fa-2x mt-3"></i>
+                                        <p style={{ marginLeft: "-5px", textDecoration: "underline" }}>Fendji</p>
                                     </div>
                                     <div className="col-md-2 mt-2">
                                         Langue
