@@ -7,13 +7,7 @@ function UpComponent() {
                 <div className="col-md-12">
                     <div className="row">
                         <div className="col-md-3 mt-3">
-                            <h4 style={{
-                                width: "76px", 
-                                height: "76px",
-                                border: "5px solid silver",
-                                borderRadius: "50%", textAlign: "center",
-                                marginTop: "-12px"
-                            }}>SE Monit</h4>
+                            <h4 style={{width:"90px", height:"90px", border:"5px solid silver", borderRadius:"50%", textAlign:"center", marginTop:"-15px"}}>SE Monit</h3>
                         </div>
                         <div className="col-md-6"></div>
                         <div className="col-md-3">
