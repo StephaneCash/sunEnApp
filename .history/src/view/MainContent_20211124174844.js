@@ -109,30 +109,30 @@ function MainContent() {
                                                         <div className="col-md-12">
                                                             <div className="row">
                                                                 <div className="col-md-12 champs">
-                                                                    <h4>Champs photovoltaiques : 2 panneaux solaires</h4> <br />
+                                                                    <h6>Champs photovoltaiques : 2 panneaux solaires</h6> <br />
                                                                     <div className="d-flex">
-                                                                        <div style={{ marginLeft: '65px' }} >
+                                                                        <div style={{ marginLeft: '60px' }} >
                                                                             <table className="table table-striped">
                                                                                 <tbody>
                                                                                     <tr>
                                                                                         <td>
-                                                                                            <i className="fa fa-solar-panel "></i>
+                                                                                            <i className="fa fa-solar-panel"></i>
                                                                                         </td>
-                                                                                        <td> <i className="fa fa-solar-panel "></i></td>
-                                                                                        <td> <i className="fa fa-solar-panel "></i> </td>
-                                                                                        <td>  <i className="fa fa-solar-panel "></i> </td>
+                                                                                        <td> <i className="fa fa-solar-panel"></i></td>
+                                                                                        <td> <i className="fa fa-solar-panel"></i> </td>
+                                                                                        <td>  <i className="fa fa-solar-panel"></i> </td>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td> <i className="fa fa-solar-panel " ></i> </td>
-                                                                                        <td> <i className="fa fa-solar-panel "></i> </td>
-                                                                                        <td> <i className="fa fa-solar-panel "></i> </td>
-                                                                                        <td> <i className="fa fa-solar-panel "></i> </td>
+                                                                                        <td> <i className="fa fa-solar-panel"></i> </td>
+                                                                                        <td> <i className="fa fa-solar-panel"></i> </td>
+                                                                                        <td> <i className="fa fa-solar-panel"></i> </td>
+                                                                                        <td> <i className="fa fa-solar-panel"></i> </td>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td> <i className="fa fa-solar-panel "></i> </td>
-                                                                                        <td> <i className="fa fa-solar-panel "></i> </td>
-                                                                                        <td> <i className="fa fa-solar-panel "></i> </td>
-                                                                                        <td> <i className="fa fa-solar-panel "></i> </td>
+                                                                                        <td> <i className="fa fa-solar-panel"></i> </td>
+                                                                                        <td> <i className="fa fa-solar-panel"></i> </td>
+                                                                                        <td> <i className="fa fa-solar-panel"></i> </td>
+                                                                                        <td> <i className="fa fa-solar-panel"></i> </td>
                                                                                     </tr>
                                                                                 </tbody>
                                                                             </table>
@@ -142,30 +142,40 @@ function MainContent() {
                                                                                 <tbody>
                                                                                     <tr>
                                                                                         <td>
-                                                                                            <i className="fa fa-solar-panel "></i>
+                                                                                            <i className="fa fa-solar-panel"></i>
                                                                                         </td>
-                                                                                        <td> <i className="fa fa-solar-panel "></i></td>
-                                                                                        <td> <i className="fa fa-solar-panel "></i> </td>
-                                                                                        <td>  <i className="fa fa-solar-panel "></i> </td>
+                                                                                        <td> <i className="fa fa-solar-panel"></i></td>
+                                                                                        <td> <i className="fa fa-solar-panel"></i> </td>
+                                                                                        <td>  <i className="fa fa-solar-panel"></i> </td>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td> <i className="fa fa-solar-panel "></i> </td>
-                                                                                        <td> <i className="fa fa-solar-panel "></i> </td>
-                                                                                        <td> <i className="fa fa-solar-panel "></i> </td>
-                                                                                        <td> <i className="fa fa-solar-panel "></i> </td>
+                                                                                        <td> <i className="fa fa-solar-panel"></i> </td>
+                                                                                        <td> <i className="fa fa-solar-panel"></i> </td>
+                                                                                        <td> <i className="fa fa-solar-panel"></i> </td>
+                                                                                        <td> <i className="fa fa-solar-panel"></i> </td>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td> <i className="fa fa-solar-panel "></i> </td>
-                                                                                        <td> <i className="fa fa-solar-panel "></i> </td>
-                                                                                        <td> <i className="fa fa-solar-panel "></i> </td>
-                                                                                        <td> <i className="fa fa-solar-panel "></i> </td>
+                                                                                        <td> <i className="fa fa-solar-panel"></i> </td>
+                                                                                        <td> <i className="fa fa-solar-panel"></i> </td>
+                                                                                        <td> <i className="fa fa-solar-panel"></i> </td>
+                                                                                        <td> <i className="fa fa-solar-panel"></i> </td>
                                                                                     </tr>
                                                                                 </tbody>
                                                                             </table>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                               
+                                                                <div className="col-md-12 temperature" style={{ textAlign: "center" }}>
+                                                                    <b>
+                                                                        Température
+                                                                    </b> <br />
+                                                                    <div>
+                                                                        <i className=" fa fa-temperature-high fa-2x"></i> <br />
+                                                                        <p style={{ marginLeft: "-10px" }}>
+                                                                            00 %
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>

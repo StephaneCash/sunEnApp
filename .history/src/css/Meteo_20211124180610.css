@@ -28,7 +28,7 @@ main {
     border-radius: 16px;
 }
 
-.img img {
+img {
     width: 100px;
     margin-top: 10px;
     border-radius: 100%;

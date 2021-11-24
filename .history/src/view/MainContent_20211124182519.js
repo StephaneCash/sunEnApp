@@ -111,7 +111,7 @@ function MainContent() {
                                                                 <div className="col-md-12 champs">
                                                                     <h4>Champs photovoltaiques : 2 panneaux solaires</h4> <br />
                                                                     <div className="d-flex">
-                                                                        <div style={{ marginLeft: '65px' }} >
+                                                                        <div style={{ marginLeft: '5px' }} >
                                                                             <table className="table table-striped">
                                                                                 <tbody>
                                                                                     <tr>

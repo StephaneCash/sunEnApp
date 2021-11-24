@@ -8,7 +8,7 @@ function UpComponent() {
                 <div className="col-md-12">
                     <div className="row">
                         <div className="col-md-3 mt-3">
-                            <img src={logo} id="img" />
+                            <img src={logo} style={{ marginTop: "-15px", }} />
                         </div>
                         <div className="col-md-6"></div>
                         <div className="col-md-3">
